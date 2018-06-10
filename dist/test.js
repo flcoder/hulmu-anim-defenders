@@ -4,4 +4,4 @@ const config = {
   containerId: 'DefendersAnimContainer'
 }
 
-const da = new DefendersAnim( config )
+DefendersAnim.create( config )
