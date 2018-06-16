@@ -250,8 +250,11 @@ function mkAnim( config ) {
     const fls = images.flash
 
     let bs = 5
+    const T_START = 0.0
+    const T_BRAINS_IN = 0.3
+    const T_END = 1.0
 
-    anim.addSpan( 0.0, 1.0, function( perc ) {
+    anim.addSpan( START, END, function( perc ) {
       fla.opacity( 0 )
       clo.x( clo.span * perc + clo.start )
       bra.scale( { x: bs, y: bs } )
